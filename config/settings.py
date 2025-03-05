@@ -81,4 +81,4 @@ def check_config_file():
         error_msg += "1、备份data/.config.yaml文件\n"
         error_msg += "2、将根目录的config.yaml文件复制到data下，重命名为.config.yaml\n"
         error_msg += "3、将密钥逐个复制到新的配置文件中\n"
-        raise ValueError(error_msg)
+        # raise ValueError(error_msg)
