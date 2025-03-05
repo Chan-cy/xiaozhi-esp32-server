@@ -333,6 +333,8 @@ class MusicHandler:
                     logger.bind(tag=TAG).info(f"找到最匹配的歌曲: {best_match}")
                     await self.play_local_music(conn, specific_file=best_match)
                     return True
+        logger.bind(tag=TAG).info(f"开始搜索歌曲: {potential_song}")
+        logger.bind(tag=TAG).info(f"提取的文本: {clean_text}")
 
         # 检查是否是通用播放音乐命令
         if any(cmd in clean_text for cmd in self.music_related_keywords):
